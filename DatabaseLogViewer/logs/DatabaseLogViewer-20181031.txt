@@ -1,0 +1,55 @@
+2018-10-31 10:02:02.645 -04:00 [Information] User profile is available. Using '"C:\Users\mselvamoorthy\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-31 10:02:03.836 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:55732/  0
+2018-10-31 10:02:03.836 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/  
+2018-10-31 10:02:03.932 -04:00 [Information] Request finished in 127.3607ms 200 
+2018-10-31 10:02:04.128 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.HomeController.Index (DatabaseLogViewer)" with arguments (null) - ModelState is Valid
+2018-10-31 10:02:06.943 -04:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-10-31 10:02:07.703 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.HomeController.Index (DatabaseLogViewer)" in 3575.9835ms
+2018-10-31 10:02:07.736 -04:00 [Information] Request finished in 3925.5449ms 200 text/html; charset=utf-8
+2018-10-31 10:02:07.752 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/js/dbLogView.js  
+2018-10-31 10:02:07.812 -04:00 [Information] Sending file. Request path: '"/js/dbLogView.js"'. Physical path: '"C:\projects.git\get2\DatabaseLogViewer\wwwroot\js\dbLogView.js"'
+2018-10-31 10:02:07.868 -04:00 [Information] Request finished in 120.7376ms 200 application/javascript
+2018-10-31 10:02:07.934 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/api/LogsView/logs/count?_=1540994527897  
+2018-10-31 10:02:07.946 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/api/LogsView/logs?sortField=%5BDatabaseLogID%5D&sortDirection=ASC&pageNumber=1&pageSize=15&_=1540994527898  
+2018-10-31 10:02:07.972 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.LogsViewController.GetLogsCount (DatabaseLogViewer)" with arguments (null) - ModelState is Valid
+2018-10-31 10:02:08.195 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.LogsViewController.GetLogs (DatabaseLogViewer)" with arguments (["[DatabaseLogID]", "ASC", "1", "15"]) - ModelState is Valid
+2018-10-31 10:02:10.765 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-31 10:02:10.773 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.LogsViewController.GetLogsCount (DatabaseLogViewer)" in 2803.3692ms
+2018-10-31 10:02:10.780 -04:00 [Information] Request finished in 2854.6455ms 200 application/json; charset=utf-8
+2018-10-31 10:02:10.885 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-31 10:02:10.901 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.LogsViewController.GetLogs (DatabaseLogViewer)" in 2746.4612ms
+2018-10-31 10:02:10.914 -04:00 [Information] Request finished in 2975.6424ms 200 application/json; charset=utf-8
+2018-10-31 10:02:13.435 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/Home/Contact  
+2018-10-31 10:02:13.451 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.HomeController.Contact (DatabaseLogViewer)" with arguments (null) - ModelState is Valid
+2018-10-31 10:02:13.604 -04:00 [Information] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml".
+2018-10-31 10:02:13.622 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.HomeController.Contact (DatabaseLogViewer)" in 170.4681ms
+2018-10-31 10:02:13.640 -04:00 [Information] Request finished in 204.8812ms 200 text/html; charset=utf-8
+2018-10-31 10:02:16.570 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/index.html  
+2018-10-31 10:02:16.593 -04:00 [Information] Request finished in 21.4552ms 200 text/html
+2018-10-31 10:02:16.630 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/swagger-ui.css  
+2018-10-31 10:02:16.633 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/swagger-ui-bundle.js  
+2018-10-31 10:02:16.650 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/swagger-ui-standalone-preset.js  
+2018-10-31 10:02:16.675 -04:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2018-10-31 10:02:16.701 -04:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2018-10-31 10:02:16.754 -04:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2018-10-31 10:02:16.808 -04:00 [Information] Request finished in 155.8574ms 200 application/javascript
+2018-10-31 10:02:16.861 -04:00 [Information] Request finished in 228.7961ms 200 text/css
+2018-10-31 10:02:16.951 -04:00 [Information] Request finished in 339.88ms 200 application/javascript
+2018-10-31 10:02:17.363 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/v1/swagger.json  
+2018-10-31 10:02:17.394 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/favicon-32x32.png  
+2018-10-31 10:02:17.407 -04:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-10-31 10:02:17.438 -04:00 [Information] Request finished in 50.1498ms 200 image/png
+2018-10-31 10:02:17.472 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/swagger/favicon-16x16.png  
+2018-10-31 10:02:17.483 -04:00 [Information] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-10-31 10:02:17.491 -04:00 [Information] Request finished in 40.6579ms 200 image/png
+2018-10-31 10:02:17.679 -04:00 [Information] Request finished in 313.9645ms 200 application/json;charset=utf-8
+2018-10-31 10:02:35.470 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/api/LogsView/logs  
+2018-10-31 10:02:35.486 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.LogsViewController.GetLogs (DatabaseLogViewer)" with arguments (["DatabaseLogID", "ASC", "1", "15"]) - ModelState is Valid
+2018-10-31 10:02:35.510 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-31 10:02:35.522 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.LogsViewController.GetLogs (DatabaseLogViewer)" in 38.2596ms
+2018-10-31 10:02:35.538 -04:00 [Information] Request finished in 67.8439ms 200 application/json; charset=utf-8
+2018-10-31 10:02:45.563 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:55732/api/LogsView/logs/count  
+2018-10-31 10:02:45.577 -04:00 [Information] Executing action method "DatabaseLogViewer.Controllers.LogsViewController.GetLogsCount (DatabaseLogViewer)" with arguments (null) - ModelState is Valid
+2018-10-31 10:02:45.600 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-31 10:02:45.614 -04:00 [Information] Executed action "DatabaseLogViewer.Controllers.LogsViewController.GetLogsCount (DatabaseLogViewer)" in 35.5272ms
+2018-10-31 10:02:45.624 -04:00 [Information] Request finished in 60.3703ms 200 application/json; charset=utf-8

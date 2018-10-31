@@ -1,0 +1,116 @@
+﻿.hiddenNone {
+    display: none !important; /* does Not take up space, plus hidden */
+}
+
+.hiddenVisibility {
+    visibility: hidden !important; /* takes up same space as bef, plus hidden */
+}
+
+.logsContentWrapper {
+    height: auto;
+    /*min-height:400px;*/
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#logsSpinnerContainer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 50%;
+    margin-left: -7em;
+}
+#logsSpinner {
+    margin-left: 2.5em;
+}
+
+#logPageNumberCurrent,
+#logPageNumberTotal {
+    margin-left: .25em;
+    margin-right: .5em;
+}
+
+#logPageNumberCurrent {
+    margin-right: 0.25em;
+}
+
+.logsContentWrapper {
+    height: auto;
+    /*min-height:400px;*/
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+#logClear {
+    background-color: #660000;
+    color: white;
+    font-weight: 700;
+    border-color: #660000;
+    border-width: thin;
+}
+
+#logsResultsTitle {
+    font-weight: 700;
+}
+
+#logClear {
+    margin-left: 0.5em;
+}
+
+
+.hdr {
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 1em;
+    width: 11em;
+}
+.logRecord {
+    padding-top: 5px;
+    border-top: 1px solid #9E9E9E;
+    overflow-wrap: break-word;
+}
+.dbEvent {
+    padding-right: 1em;
+}
+
+#dbLogViewTableHeaderRow .hdr.selected::after {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+#dbLogViewTableHeaderRow.ascending .hdr.selected::after {
+    content: "\f0de";
+}
+
+#dbLogViewTableHeaderRow .hdr.selected::after {
+    content: "\f0dd";
+}
+
+.hdr.selected {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+#pageSizeSpan {
+    margin-left: 2.5em;
+    color: forestgreen;
+}
+#pageSize {
+    color: black;
+}
+#editMe {
+    border-color: lawngreen;
+    border-width: medium;
+}
+
+.tsqlTextArea {
+    border: 0 none white;
+    overflow-wrap: break-word;
+    padding: 0;
+    outline: none;
+    height: auto;
+    background-color: #D0D0D0;
+}

@@ -1,0 +1,5 @@
+A. Download AdventureWorks2014-db from https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2014.bak
+B. Move the downloaded .bak file to folder 'C:\db-extracts\AdvWks2014' on your computer
+C. Open MS SQL Server Mgmt Studio
+D. Connect to DB Server '(localdb)\MSSQLLocalDB' with default 'Windows Authentication'
+C. Go to STEP1: [Run 'STEP1_AdventureWorks2014_restoreScript.sql' to Restore AdventureWorks2014-db to '(localdb)\MSSQLLocalDB' server from downloaded AdventureWorks2014.bak]

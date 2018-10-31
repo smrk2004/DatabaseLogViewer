@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<link href="@Url.Content("~/css/dbLogView.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/lib/fontawesome/css/font-awesome.css")" rel="stylesheet" type="text/css" />
+
+<div class="logsContentWrapper">
+    <div>
+        <h4>AdventureWorks2014.dbo.DatabaseLog</h4>
+        <span id="logsResultsTitle"></span>
+        <input type="button" class="btn logsBtn" id="logFirstPage" value="First" />
+        <input type="button" class="btn logsBtn" id="logPreviousPage" value="Previous" />
+        <input type="text" id="logRecordNavigatorStart" disabled="disabled" value="0" size="5" />
+        <span>to</span>
+        <input type="text" id="logRecordNavigatorEnd" disabled="disabled" value="0" size="5" />
+        <input type="button" class="btn logsBtn" id="logNextPage" value="Next" />
+        <input type="button" class="btn logsBtn" id="logLastPage" value="Last" />
+        <input type="button" class="btn logsBtn" id="logClear" value="Clear Results" />
+        <hr />
+    </div>
+    <table id="logsData">
+        <tr id="dbLogViewTableHeaderRow" class="ascending">
+            <th id="dbLogIDHdr"     class="dbLogID  hdr selected">DatabaseLogID   </th>
+            <th id="dbUserHdr"      class="dbUser   hdr">DatabaseUser             </th>
+            <th id="dbEventHdr"     class="dbEvent  hdr">Event                    </th>
+            <th id="dbSchemaHdr"    class="dbSchema hdr">Schema                   </th>
+            <th id="dbObjectHdr"    class="dbObject hdr">Object                   </th>
+            <th id="dbTSQLHdr"      class="dbTSQL   hdr">TSQL                     </th>
+        </tr>
+    </table>
+    <div id="logsSpinnerContainer">
+        <div>
+            <img alt="Loading" id="logsSpinner" src="@Url.Content("~/images/loading.gif")" />
+            <br />
+            <br />
+            <span id="logsSpinnerText">Loading Logs Data ...</span>
+        </div>
+    </div>
+    <div>
+        <hr />
+        <span id="pageDisplay">
+            Page(s)
+            <input type="text" id="logPageNumberCurrent" disabled="disabled" value="1" size="3" />
+            /
+            <input type="text" id="logPageNumberTotal" disabled="disabled" value="1" size="3" />
+        </span>
+        <span id="pageSizeSpan">
+            Page Size <input id="pageSize" value="15" size="3" /> <span id="editMe"><i class="fa fa-arrow-right"></i> Edit Me!</span>
+        </span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var GetLogsEndpoint = "@Url.Content("/api/LogsView/logs")";
+    var GetLogsCountEndpoint= "@Url.Content("/api/LogsView/logs/count")";
+</script>
+<script type="text/javascript" src="@Url.Content("~/lib/jquery/dist/jquery.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/js/dbLogView.js")"></script>
