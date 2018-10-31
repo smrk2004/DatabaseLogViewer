@@ -3,7 +3,10 @@
 PROBLEM
 ========
 Implementation of Log Viewer on AdventureWorks2014 DB's Logs table
-Solved via an ASPNETCORE MVC app 'DatabaseLogViewer'
+
+Solution
+========
+Solved via an ASPNETCORE MVC app 'DatabaseLogViewer'; C#, ASPNETCORE MVC, SQL, jQuery
 
 Also included SQL Setup_Scripts to be run first(please find inside '_SQLSetup_Scripts-Please-RUN-first' folder):
 
